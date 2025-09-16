@@ -10,8 +10,8 @@ const root = createRoot(domNode);
 root.render(
 	<StrictMode>
 		<Analytic.Provider value={{ yandexId: 96728508, googleId: 'G-ZXWBHB1NR0' }}>
-			<BrowserRouter>
-				basename={process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : '/'}>
+			<BrowserRouter basename={process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : '/'}>
+			
 				<App />
 			</BrowserRouter>
 		</Analytic.Provider>
